@@ -1,3 +1,4 @@
+import os
 filename = open("output.txt")            
 outputfile = open("final.txt","w+")
 
@@ -48,3 +49,5 @@ for line in filename:
 
 	outputfile.write(line)
 	pos += 1
+filename.close()
+os.remove('output.txt')
