@@ -13,7 +13,8 @@ for line in filename:
 pos = 0
 tripread = 0
 tripfile = 0
-filename = open("output.txt")         
+filename = open("output.txt")
+flag = None
 
 for line in filename:
         trip = line.split(',')
