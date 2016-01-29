@@ -1,4 +1,4 @@
-filename = raw_input("Enter file name (gtfs.txt): ")
+filename = raw_input("Enter file name (stop_times.txt): ")
 if len(filename) < 1 : filename ="input.txt"
 
 inputfile = open(filename)                    
@@ -39,7 +39,7 @@ for line in inputfile:
 
 	print trip[0],trips[pos][0]
 	if id == trips[pos-2][3] and trip[0] == trips[pos-2][0]:
-		print id,"\tthis REMOVED"," trip id:",trips[pos-2][3]
+		print id,"\tREMOVED"," trip id:",trips[pos-2][3]
 		continue	
 
 	outputfile.write(line)	
